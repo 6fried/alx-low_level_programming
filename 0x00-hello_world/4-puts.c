@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main(){
+int main(void)
+{
   puts("\"Programming is like building a multilingual puzzle\n");
-  return EXIT_SUCCESS;
+  return (0);
 }
