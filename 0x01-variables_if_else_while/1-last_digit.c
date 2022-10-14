@@ -12,12 +12,12 @@
 int main(void)
 {
 	int n;
+	int lastDigit;
+	char *msg;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int lastDigit;
-	char *msg;
 
 	lastDigit = n % 10;
 
