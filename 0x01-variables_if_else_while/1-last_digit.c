@@ -34,7 +34,7 @@ int main(void)
 		msg = "and is less than 6 and not 0";
 	}
 
-	printf("The last digit of %d is %d %s", n, lastDigit, msg);
+	printf("Last digit of %d is %d %s", n, lastDigit, msg);
 
 	return (0);
 }
