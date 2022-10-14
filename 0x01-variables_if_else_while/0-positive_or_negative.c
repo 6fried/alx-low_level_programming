@@ -29,6 +29,6 @@ int main(void)
 	{
 		msg = "is negative";
 	}
-	printf("%d %s", n, msg);
+	printf("%d %s\n", n, msg);
 	return (0);
 }
