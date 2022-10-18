@@ -30,7 +30,12 @@ void print_to_98(int n)
 	{
 		for (i = n; i > 99; i--)
 		{
-			if (i >= 10)
+			if (i >= 100)
+			{
+				_putchar('0' + i / 100);
+				_putchar('0' + (i - i%10) / 10);
+			}
+			else
 			{
 				_putchar('0' + i / 10);
 			}
