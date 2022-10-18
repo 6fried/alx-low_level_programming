@@ -10,16 +10,37 @@ void print_to_98(int n)
 {
 	int i;
 
-	for (i = n; i < 99; i++)
+	if (n < 99)
 	{
-		if (i >= 10)
+		for (i = n; i < 99; i++)
 		{
-			_putchar('0' + i / 10);
+			if (i >= 10)
+			{
+				_putchar('0' + i / 10);
+			}
+			_putchar('0' + i % 10);
+			if (i != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
-		_putchar('0' + i % 10);
-		_putchar(',');
-		_putchar(' ');
 	}
-
+	else
+	{
+		for (i = n; i > 99; i--)
+		{
+			if (i >= 10)
+			{
+				_putchar('0' + i / 10);
+			}
+			_putchar('0' + i % 10);
+			if (i != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+	}
 	_putchar('\n');
 }
