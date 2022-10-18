@@ -17,6 +17,12 @@ int print_last_digit(int n)
 	return (lastDigit);
 }
 
+/**
+ * _abs -  computes the absolute value of an integer.
+ * @n: the number
+ * Return: the absolute value
+ */
+
 int _abs(int n)
 {
 	if (n < 0)
