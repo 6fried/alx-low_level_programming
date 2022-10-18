@@ -33,7 +33,7 @@ void print_to_98(int n)
 			if (i >= 100)
 			{
 				_putchar('0' + i / 100);
-				_putchar('0' + (i - i % 10) / 10);
+				_putchar('0' + (i / 10) % 10);
 			}
 			else
 			{
