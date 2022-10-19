@@ -33,7 +33,7 @@ void print_to_98(int n)
  */
 
 
-void print(int i)
+void print(int n)
 {
 	int i;
 
