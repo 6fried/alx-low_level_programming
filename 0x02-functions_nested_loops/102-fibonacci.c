@@ -1,40 +1,25 @@
 #include <stdio.h>
 
 /**
- * fibonacci - prints fibonqcci of n
- * @n: the number
- * Return: f(n)
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
-
-int fibonacci(int n)
-{
-	if (n == 0)
-	{
-		printf("%d ", 0);
-		return (0);
-	}
-	else if (n == 1)
-	{
-		printf("%d ", 1);
-		return (1);
-	}
-	else
-	{
-		int r;
-
-		r = fibonacci(n - 2) + fibonacci(n - 1);
-		printf("%d ", r);
-		return (r);
-	}
-}
-
-/**
- * main - entry point
- * Return: 0
- */
-
 int main(void)
 {
-	fibonacci(50);
+	int i;
+	long int num1 = 0, num2 = 1, num3 = 0;
+	for (i = 0; i < 50; i++)
+	{
+
+		num3 = num2 + num1;
+		num1 = num2;
+		num2 = num3;
+		if (i != 49)
+			printf("%ld, ", num3);
+		else
+			printf("%ld", num3);
+	}
+	printf("\n");
 	return (0);
 }
