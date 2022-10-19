@@ -49,7 +49,7 @@ void print(int i)
 		_putchar('0' + i / 100);
 		_putchar('0' + (i / 10) % 10);
 	}
-	else
+	else if (i >= 10)
 	{
 		_putchar('0' + i / 10);
 	}
