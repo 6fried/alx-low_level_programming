@@ -36,4 +36,5 @@ int fibonacci(int n)
 int main(void)
 {
 	fibonacci(50);
+	return (0);
 }
