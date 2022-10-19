@@ -29,7 +29,7 @@ void print_to_98(int n)
 
 /**
  * print - prints a number
- * @i: The number
+ * @n: The number
  */
 
 
