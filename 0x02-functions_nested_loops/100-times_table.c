@@ -13,7 +13,13 @@ void print_times_table(int n)
 	{
 		for (j = 0; j <= n; j++)
 		{
-			if (i * j >= 100)
+			if (i * j >= 1000)
+			{
+				_putchar('0' + (i * j) / 1000);
+				_putchar('0' + ((i * j) / 100) % 10);
+				_putchar('0' + ((i * j) / 10) % 10);
+			}
+			else if (i * j >= 100)
 			{
 				_putchar('0' + (i * j) / 100);
 				_putchar('0' + ((i * j) / 10) % 10);
