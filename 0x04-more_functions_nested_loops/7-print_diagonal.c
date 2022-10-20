@@ -5,7 +5,7 @@
  * @n: number
  */
 
-void print_giagonal(int n)
+void print_diagonal(int n)
 {
 	int i, j;
 
