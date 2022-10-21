@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	unsigned long i, prime, n = 15;
+	unsigned long i, prime, n = 612852475143;
 
 	for (i = 3; i <= n; i += 2)
 	{
