@@ -1,45 +1,40 @@
 #include "main.h"
 
+#include <stdlib.h>
 /**
- * print_number - prints a number
- * @n: The number
+ * print_number - check the code for Holberton School students.
+ * @n: is a int number
+ * Return: Always 0.
  */
 void print_number(int n)
 {
-	int i;
+int cont = 1, num = n;
 
-	if (n < 0)
-	{
-		i = -n;
-		_putchar('-');
-	}
-	else
-	{
-		i = n;
-	}
+if (n < 0)
+_putchar('-');
 
-	if (i >= 10000)
-	{
-		_putchar('0' + i / 10000);
-		_putchar('0' + (i / 1000) % 10);
-		_putchar('0' + (i / 100) % 10);
-		_putchar('0' + (i / 10) % 10);
-	}
-	else if (i >= 1000)
-	{
-		_putchar('0' + i / 1000);
-		_putchar('0' + (i / 100) % 10);
-		_putchar('0' + (i / 10) % 10);
-	}
-	else if (i >= 100)
-	{
-		_putchar('0' + i / 100);
-		_putchar('0' + (i / 10) % 10);
-	}
-	else if (i >= 10)
-	{
-		_putchar('0' + i / 10);
-	}
-
-	_putchar('0' + i % 10);
+while (num / 10 != 0)
+{
+cont = cont * 10;
+num = num / 10;
 }
+
+while ((n / cont != 0) && (cont != 1))
+{
+_putchar(abs((n / cont)) + '0');
+
+n = n % cont;
+
+if (cont > 1)
+cont = cont / 10;
+
+while ((abs(n) < cont) &&(cont > 1))
+{
+_putchar('0');
+cont = cont / 10;
+}
+}
+
+_putchar(abs(n) + '0');
+}
+
