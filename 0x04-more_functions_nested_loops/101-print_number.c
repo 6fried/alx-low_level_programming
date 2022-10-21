@@ -18,7 +18,14 @@ void print_number(int n)
 		i = n;
 	}
 
-	if (i >= 1000)
+	if (i >= 10000)
+	{
+		_putchar('0' + i / 10000);
+		_putchar('0' + (i / 1000) % 10);
+		_putchar('0' + (i / 100) % 10);
+		_putchar('0' + (i / 10) % 10);
+	}
+	else if (i >= 1000)
 	{
 		_putchar('0' + i / 1000);
 		_putchar('0' + (i / 100) % 10);
