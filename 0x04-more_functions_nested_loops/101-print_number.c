@@ -2,9 +2,8 @@
 
 #include <stdlib.h>
 /**
- * print_number - check the code for Holberton School students.
+ * print_number - print a number
  * @n: is a int number
- * Return: Always 0.
  */
 void print_number(int n)
 {
