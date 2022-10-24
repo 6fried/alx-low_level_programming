@@ -6,10 +6,14 @@
  */
 void rev_string(char *s)
 {
-	char *tmp = s;
+	char tmp[500];
 	int i, size;
 
-	strcpy(tmp, s);
+	for (int i = 0; i < s[i] != '\0'; i++)
+	{
+		tmp[i] = s[i];
+	}
+
 	size = strlen(tmp);
 	for (i = 0; i < size; i++)
 	{
