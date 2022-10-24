@@ -15,5 +15,5 @@ void print_rev(char *s)
 	{
 		write(1, &s[i], 1);
 	}
-	write(0, "\n", 1);
+	write(1, "\n", 1);
 }
