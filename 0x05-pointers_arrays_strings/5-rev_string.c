@@ -6,7 +6,7 @@
  */
 void rev_string(char *s)
 {
-	char tmp[500];
+	char *tmp = malloc(sizeof(s));
 	int i, size;
 
 	for (i = 0; s[i] != '\0'; i++)
@@ -14,7 +14,8 @@ void rev_string(char *s)
 		tmp[i] = s[i];
 	}
 
-	size = strlen(tmp);
+	for (size = 0; tmp[size]; size++)
+		;
 	for (i = 0; i != size; i++)
 	{
 		s[i] = tmp[size - i - 1];
