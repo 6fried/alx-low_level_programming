@@ -6,11 +6,14 @@
  */
 void print_rev(char *s)
 {
-	int i;
+	int i, j;
 
-	for (i = strlen(s) - 1; i >= 0; i--)
+	for (j = 0; s[j]; j++)
+		;
+
+	for (i = j - 1; i >= 0; i--)
 	{
-		write(0, s[i], 1);
+		write(1, &s[i], 1);
 	}
 	write(0, '\n', 1);
 }
