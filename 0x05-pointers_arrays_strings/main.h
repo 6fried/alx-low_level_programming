@@ -13,4 +13,17 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
+
+void print(const char *format)
+{
+	int i, j;
+
+	for (j = 0; format[j]; j++)
+		;
+
+	for (i = 0; i < j; i++)
+	{
+		write(1, &format[i], 1);
+	}
+}
 #endif
