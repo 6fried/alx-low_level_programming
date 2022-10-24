@@ -13,10 +13,11 @@ void puts_half(char *str)
 		;
 
 	n = j / 2;
-	if (j % 2 == 0)
+	if (j % 2 != 0)
 		n++;
 
 	for (i = n; str[i]; i++)
 		write(1, &str[i], 1);
+
 	write(1, "\n", 1);
 }
