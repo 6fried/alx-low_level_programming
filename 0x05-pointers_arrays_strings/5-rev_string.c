@@ -6,10 +6,10 @@
  */
 void rev_string(char *s)
 {
-	char *tmp;
+	char *tmp = s;
 	int i, size;
 
-	strcpy(s, tmp);
+	strcpy(tmp, s);
 	size = strlen(tmp);
 	for (i = 0; i < size; i++)
 	{
