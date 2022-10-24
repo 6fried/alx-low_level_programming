@@ -7,9 +7,13 @@
  */
 void puts_half(char *str)
 {
-	int i;
+	int i, first;
 
-	for (i = (int)strlen(str) / 2; str[i] != '\0'; i++)
+	first = strlen(str) / 2;
+	if (first > strlen(str) / 2)
+		first--;
+
+	for (i = first; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}
