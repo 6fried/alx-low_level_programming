@@ -6,16 +6,13 @@
  */
 void rev_string(char *s)
 {
-	char *tmp = malloc(sizeof(s));
-	int i, j;
+	int i, j = 0;
+	char *out = malloc(sizeof(char));
 
-	for (j = 0; s[j]; j++)
-	{
-		tmp[j] = s[j];
-	}
+	for (i = 0; s[i]; i++)
+		;
+	for (; s[i - 1]; i--, j++)
+		out[j] = s[i - 1];
 
-	for (i = j - 1; i >= 0; i--)
-	{
-		s[i] = tmp[i - j + 1];
-	}
+	s = out;
 }
