@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * putshalf - description
+ * puts_half - description
  *
  * @str:  argument
  */
@@ -9,9 +9,10 @@ void puts_half(char *str)
 {
 	int i, first;
 
-	first = strlen(str) / 2;
-	if (first > strlen(str) / 2)
-		first--;
+	if (strlen(str) % 2 == 0)
+		first = strlen(str) / 2;
+	else
+		first = strlen(str) / 2 - 1;
 
 	for (i = first; str[i] != '\0'; i++)
 	{
