@@ -1,4 +1,4 @@
-#include "main.h"
+#include <unistd.h>
 /**
  * _puts - prints a string
  *
@@ -10,7 +10,7 @@ void _puts(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(str[i]);
+		write(0, str[i], 1);
 	}
-	_putchar('\n');
+	write(0, '\n', 1);
 }
