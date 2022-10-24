@@ -6,8 +6,14 @@
  */
 void _puts(char *str)
 {
-	int i;
+	int i, j;
 
-	print(str);
+	for (j = 0; str[j]; j++)
+		;
+
+	for (i = 0; i < j; i++)
+	{
+		write(1, &str[i], 1);
+	}
 	print("\n");
 }
