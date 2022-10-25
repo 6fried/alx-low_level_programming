@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * _atoi -func
  *
@@ -26,4 +27,68 @@ int _atoi(char *s)
 	}
 	else
 		return (0);
+}
+
+/**
+ * string_to_nbr -func
+ *
+ * @str: param
+ * Return: return
+ */
+int string_to_nbr(char *str)
+{
+	unsigned int nbr = 0, i;
+
+	for (i = 0; str[i] != '-' && str[i] && '+'; i++)
+	{
+		nbr *= 10;
+		nbr += str[i] - '0';
+	}
+
+	return nbr;
+}
+
+/**
+ * search_int -func
+ *
+ * @str: param
+ * Return: return
+ */
+char *search_int(char *str)
+{
+	int i, j = 0;
+	char *out;
+
+	for (i = 0; str[i]; i++)
+	{
+		if ('0' <= str[i] && str[i] <= '9')
+		{
+			j = 0;
+			while ('0' <= str[i] && str[i] <= '9')
+			{
+				i++;
+				j++;
+			}
+			break;
+		}
+	}
+
+	out = malloc((j + 1) * sizeof(char));
+
+	for (i = 0; str[i]; i++)
+	{
+		if ('0' <= str[i] && str[i] <= '9')
+		{
+			j = 0;
+			while ('0' <= str[i] && str[i] <= '9')
+			{
+				out[j] = str[i];
+				i++;
+				j++;
+			}
+			break;
+		}
+	}
+
+	return out;
 }
