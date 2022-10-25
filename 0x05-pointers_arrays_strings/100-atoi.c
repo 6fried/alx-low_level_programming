@@ -8,11 +8,11 @@
 int _atoi(char *s)
 {
 	char *snbr = search_int(s);
-	int nbr = string_to_nbr(snbr);
 
-	if (nbr != NULL)
+	if (snbr != NULL)
 	{
 		int i;
+		int nbr = string_to_nbr(snbr);
 
 		for (i = 0; s[i]; i++)
 		{
