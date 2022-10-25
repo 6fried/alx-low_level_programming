@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char seed[] = "qwertyuioopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+	char seed[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char password[22];
 	int i, n, passw, cmp;
 
