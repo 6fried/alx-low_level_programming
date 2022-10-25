@@ -25,6 +25,6 @@ int main(void)
 	cmp = 2772 - passw;
 	password[i] = cmp;
 
-	printf("%S\n", password);
+	printf("%s\n", password);
 	return (0);
 }
