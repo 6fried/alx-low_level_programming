@@ -19,6 +19,8 @@ int _atoi(char *s)
 		{
 			if (s[i] == '-')
 				nbr *= -1;
+			else if ('0' <= s[i] && s[i] <= '9')
+				break;
 		}
 		return (nbr);
 	}
