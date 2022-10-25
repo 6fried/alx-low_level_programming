@@ -30,8 +30,8 @@ void print(const char *format)
 
 int string_to_nbr(char *str)
 {
-	int nbr = 0;
-	for (int i = 0; str[i]; i++)
+	int nbr = 0, i;
+	for (i = 0; str[i]; i++)
 	{
 		nbr *= 10;
 		nbr += str[i] - '0';
