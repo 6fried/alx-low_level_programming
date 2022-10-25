@@ -1,5 +1,6 @@
 #include "main.h"
 #include <time.h>
+#include <stdio.h>
 
 /**
  * main -func
