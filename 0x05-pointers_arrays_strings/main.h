@@ -79,7 +79,10 @@ char *search_int(char *str)
 	for (i = 0; str[i]; i++)
 	{
 		if (str[i] == '-')
+		{
 			out[j] = '-';
+			break;
+		}
 		else
 			out[j] = '+';
 	}
