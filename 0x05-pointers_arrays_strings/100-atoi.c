@@ -44,7 +44,7 @@ int string_to_nbr(char *str)
 		nbr += str[i] - '0';
 	}
 
-	return nbr;
+	return (nbr);
 }
 
 /**
@@ -89,5 +89,5 @@ char *search_int(char *str)
 		}
 	}
 
-	return out;
+	return (out);
 }
