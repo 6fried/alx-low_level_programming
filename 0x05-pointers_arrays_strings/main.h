@@ -56,8 +56,8 @@ char *search_int(char *str)
 				i++;
 				j++;
 			}
+			i = -1;
 		}
-		break;
 	}
 
 	out = malloc((j + 1) * sizeof(char));
