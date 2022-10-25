@@ -37,8 +37,8 @@ int string_to_nbr(char *str)
 		nbr *= 10;
 		nbr += str[i] - '0';
 	}
-	// if (str[i] == '-')
-	// 	nbr *= -1;
+	/* if (str[i] == '-')
+		nbr *= -1; */
 	return nbr;
 }
 
