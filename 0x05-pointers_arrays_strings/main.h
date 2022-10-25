@@ -37,8 +37,7 @@ int string_to_nbr(char *str)
 		nbr *= 10;
 		nbr += str[i] - '0';
 	}
-	/* if (str[i] == '-')
-		nbr *= -1; */
+
 	return nbr;
 }
 
@@ -57,6 +56,7 @@ char *search_int(char *str)
 				i++;
 				j++;
 			}
+			break;
 		}
 	}
 
@@ -75,17 +75,6 @@ char *search_int(char *str)
 			}
 		}
 	}
-
-	/*	for (i = 0; str[i]; i++)
-		{
-			if (str[i] == '-')
-			{
-				out[j] = '-';
-				break;
-			}
-			else
-				out[j] = '+';
-		}*/
 
 	return out;
 }

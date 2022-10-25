@@ -7,10 +7,20 @@
  */
 int _atoi(char *s)
 {
-	char *nbr = search_int(s);
+	char *snbr = search_int(s);
+	int nbr = string_to_nbr(snbr);
 
 	if (nbr != NULL)
-		return (string_to_nbr(nbr));
+	{
+		int i;
+
+		for (i = 0; s[i]; i++)
+		{
+			if (s[i] == '-')
+				nbr *= -1;
+		}
+		return (nbr);
+	}
 	else
 		return (0);
 }
