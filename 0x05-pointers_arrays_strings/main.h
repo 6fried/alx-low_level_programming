@@ -30,7 +30,7 @@ void print(const char *format)
 
 int string_to_nbr(char *str)
 {
-	int nbr = 0, i;
+	unsigned int nbr = 0, i;
 
 	for (i = 0; str[i] != '-' && str[i] && '+'; i++)
 	{
@@ -56,8 +56,8 @@ char *search_int(char *str)
 				i++;
 				j++;
 			}
-			break;
 		}
+		break;
 	}
 
 	out = malloc((j + 1) * sizeof(char));
