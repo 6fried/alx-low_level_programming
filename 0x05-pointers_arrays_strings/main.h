@@ -56,7 +56,7 @@ char *search_int(char *str)
 				i++;
 				j++;
 			}
-			i = -10;
+			break;
 		}
 	}
 
@@ -73,6 +73,7 @@ char *search_int(char *str)
 				i++;
 				j++;
 			}
+			break;
 		}
 	}
 
