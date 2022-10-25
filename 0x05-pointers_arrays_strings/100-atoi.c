@@ -11,4 +11,6 @@ int _atoi(char *s)
 
 	if (nbr != NULL)
 		return (string_to_nbr(nbr));
+	else
+		return (0);
 }
