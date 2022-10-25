@@ -12,7 +12,7 @@ int _atoi(char *s)
 	if (snbr != NULL)
 	{
 		int i;
-		int nbr = string_to_nbr(snbr);
+		unsigned int nbr = string_to_nbr(snbr);
 
 		for (i = 0; s[i]; i++)
 		{
