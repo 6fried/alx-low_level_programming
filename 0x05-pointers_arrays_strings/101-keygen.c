@@ -17,7 +17,7 @@ int main(void)
 
 	for (i = 0; passw < 2772; i++)
 	{
-		n = rand() % 10;
+		n = rand() % 53;
 		password[i] = seed[n];
 		passw += password[i];
 	}
