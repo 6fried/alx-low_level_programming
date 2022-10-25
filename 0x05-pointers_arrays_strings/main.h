@@ -31,11 +31,14 @@ void print(const char *format)
 int string_to_nbr(char *str)
 {
 	int nbr = 0, i;
-	for (i = 0; str[i]; i++)
+
+	for (i = 0; str[i] != '-' && str[i] && '+'; i++)
 	{
 		nbr *= 10;
 		nbr += str[i] - '0';
 	}
+	if (str[i] == '-')
+		nbr *= -1;
 	return nbr;
 }
 
@@ -57,7 +60,7 @@ char *search_int(char *str)
 		}
 	}
 
-	out = malloc(j * sizeof(char));
+	out = malloc((j + 1) * sizeof(char));
 
 	for (i = 0; str[i]; i++)
 	{
@@ -72,6 +75,15 @@ char *search_int(char *str)
 			}
 		}
 	}
+
+	for (i = 0; str[i]; i++)
+	{
+		if (str[i] == '-')
+			out[j] = '-';
+		else
+			out[j] = '+';
+	}
+
 	return out;
 }
 #endif
