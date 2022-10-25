@@ -76,16 +76,16 @@ char *search_int(char *str)
 		}
 	}
 
-	for (i = 0; str[i]; i++)
-	{
-		if (str[i] == '-')
+	/*	for (i = 0; str[i]; i++)
 		{
-			out[j] = '-';
-			break;
-		}
-		else
-			out[j] = '+';
-	}
+			if (str[i] == '-')
+			{
+				out[j] = '-';
+				break;
+			}
+			else
+				out[j] = '+';
+		}*/
 
 	return out;
 }
