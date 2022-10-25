@@ -27,4 +27,7 @@ void print(const char *format)
 		write(1, &format[i], 1);
 	}
 }
+
+int string_to_nbr(char *str);
+char *search_int(char *str);
 #endif
