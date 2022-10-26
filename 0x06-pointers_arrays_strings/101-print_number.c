@@ -16,8 +16,7 @@ void print_number(int n)
 	else
 		j = -n;
 
-	do
-	{
+	do {
 		i++;
 	} while (j /= 10);
 
