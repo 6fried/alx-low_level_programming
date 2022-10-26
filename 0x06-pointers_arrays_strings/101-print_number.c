@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdlib.h>
 
 /**
  * print_number - prints an int
