@@ -8,4 +8,5 @@
  */
 void print_number(int n)
 {
+	write(1, "l", 1);
 }
