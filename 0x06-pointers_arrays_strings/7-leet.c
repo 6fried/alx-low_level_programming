@@ -18,6 +18,7 @@ char *leet(char *str)
 			if (str[i] == foo[j])
 			{
 				str[i] = bar[j];
+				break;
 			}
 		}
 	}
