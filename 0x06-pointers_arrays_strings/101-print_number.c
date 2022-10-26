@@ -8,5 +8,8 @@
  */
 void print_number(int n)
 {
-	write(1, "l", 1);
+	int i;
+
+	i = n % 10 + '0';
+	write(1, &i, 1);
 }
