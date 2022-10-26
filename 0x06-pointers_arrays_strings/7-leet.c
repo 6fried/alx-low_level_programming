@@ -8,7 +8,7 @@
 char *leet(char *str)
 {
 	int i, j;
-	char *foo = "aAeEoOtTlT";
+	char *foo = "aAeEoOtTlL";
 	char *bar = "4433007711";
 
 	for (i = 0; str[i]; i++)
@@ -18,7 +18,6 @@ char *leet(char *str)
 			if (str[i] == foo[j])
 			{
 				str[i] = bar[j];
-				break;
 			}
 		}
 	}
