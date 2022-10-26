@@ -1,4 +1,6 @@
 #include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_number - prints an int
@@ -7,7 +9,8 @@
  */
 void print_number(int n)
 {
-	int i, j, k;
+	int i, j;
+	char *nbr;
 
 	i = 0;
 	if (n >= 0)
@@ -20,7 +23,7 @@ void print_number(int n)
 		i++;
 	} while (j /= 10);
 
-	char nbr[i + 2];
+	nbr = malloc((i + 2) * sizeof(char));
 
 	if (n >= 0)
 	{
