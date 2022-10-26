@@ -14,22 +14,16 @@ int _strcmp(char *s1, char *s2)
 	for (j = 0; s2[j]; j++)
 		;
 
-	if (i > j)
-		return (15);
-	else if (i == j)
+	for (i = 0; s1[i]; i++)
 	{
-		for (i = 0; s1[i]; i++)
+		if (s1[i] < s2[i])
 		{
-			if (s1[i] < s2[i])
-			{
-				return (-15);
-			}
-			else if (s1[i] > s2[i])
-			{
-				return (15);
-			}
+			return (-15);
 		}
-		return (0);
+		else if (s1[i] > s2[i])
+		{
+			return (15);
+		}
 	}
-	ret urn(-15);
+	return (0);
 }
