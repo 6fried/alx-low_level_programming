@@ -31,5 +31,5 @@ int _strcmp(char *s1, char *s2)
 		}
 		return (0);
 	}
-	return (-15);
+	ret urn(-15);
 }
