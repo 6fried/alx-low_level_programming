@@ -8,37 +8,29 @@
  */
 void print_number(int n)
 {
-	int i, j;
-	char nbr[100];
+	unsigned int m, d, count;
 
-	i = 0;
-	if (n >= 0)
+	if (n < 0)
 	{
-		j = n;
-		nbr[0] = '+';
+		_putchar(45);
+		m = n * -1;
 	}
 	else
 	{
-		j = -n;
-		nbr[0] = '-';
+		m = n;
 	}
 
-	do
-	{
-		i++;
-	} while (j /= 10);
+	d = m;
+	count = 1;
 
-	nbr[i + 1] = '\0';
-	for (i = i; i > 0; i--)
+	while (d > 9)
 	{
-		nbr[i] = '0' + j % 10;
-		j = j - j % 10;
-		j = j / 10;
+		d /= 10;
+		count *= 10;
 	}
 
-	for (i = 0; nbr[i]; i++)
+	for (; count >= 1; count /= 10)
 	{
-		if (nbr[i] != '+')
-			_putchar(nbr[i]);
+		_putchar(((m / count) % 10) + 48);
 	}
 }
