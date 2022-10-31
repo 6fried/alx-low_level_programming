@@ -5,6 +5,7 @@
  * @s: param
  * @b: param
  * @n: param
+ * Return: pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {
