@@ -21,6 +21,6 @@ void print_n(char *s, int n)
 void _puts_recursion(char *s)
 {
 	print_n(s, 0);
-	write (1, "\n", 1);
+	write(1, "\n", 1);
 }
 
