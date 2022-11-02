@@ -12,7 +12,7 @@ void _puts_recursion(char *s)
 		write(1, &s[0], 1);
 
 		for (i = 0; s[i]; i++)
-			s[i] = s[i+1];
+			s[i] = s[i + 1];
 		_puts_recursion(s);
 	}
 }
