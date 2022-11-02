@@ -19,7 +19,7 @@ void print_n(char *s, int n)
  * @n: param
  * Return: int
  */
-int size(char s, int n)
+int size(char *s, int n)
 {
 	if (s[n] == '\0')
 		return n;
