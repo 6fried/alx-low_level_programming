@@ -1,10 +1,10 @@
 /**
- * pow - returns the natural square root of a number.
+ * _pow - returns the natural square root of a number.
  * @n: input number.
  * @c: iterator.
  * Return: square root or -1.
  */
-int pow(int n, int c)
+int _pow(int n, int c)
 {
 	if (c % (n / c) == 0)
 	{
@@ -13,7 +13,7 @@ int pow(int n, int c)
 		else
 			return (-1);
 	}
-	return (pow(n, c + 1));
+	return (_pow(n, c + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number.
@@ -28,5 +28,5 @@ int _sqrt_recursion(int n)
 		return (0);
 	if (n == 1)
 		return (1);
-	return (pow(n, 2));
+	return (_pow(n, 2));
 }
