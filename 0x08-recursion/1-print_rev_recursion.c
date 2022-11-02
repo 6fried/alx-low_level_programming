@@ -22,8 +22,8 @@ void print_n(char *s, int n)
 int size(char *s, int n)
 {
 	if (s[n] == '\0')
-		return n - 1;
-	return size(s, n + 1);
+		return (n - 1);
+	return (size(s, n + 1));
 }
 
 /**
