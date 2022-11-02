@@ -20,5 +20,5 @@ void print_n (char *s, int n)
  */
 void _puts_recursion(char *s)
 {
-	print_n(0);
+	print_n(s, 0);
 }
