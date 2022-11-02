@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts - recursion
+ *  _puts_recursion - recursion
  * @s: pram
  */
 void _puts_recursion(char *s)
