@@ -16,6 +16,7 @@ int size(char *s, int n)
 /**
  *  _strlen_recursion - recursion
  * @s: param
+ * Return: int
  */
 int _strlen_recursion(char *s)
 {
