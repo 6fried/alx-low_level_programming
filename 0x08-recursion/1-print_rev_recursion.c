@@ -7,10 +7,10 @@
  */
 void print_n(char *s, int n)
 {
-	if (s[n] != '\0')
+	if (n >= 0)
 	{
 		write(1, &s[n], 1);
-		print_n(s, n + 1);
+		print_n(s, n - 1);
 	}
 }
 /**
@@ -22,8 +22,8 @@ void print_n(char *s, int n)
 int size(char *s, int n)
 {
 	if (s[n] == '\0')
-		return n;
-	return size(s, n+1);
+		return n - 1;
+	return size(s, n + 1);
 }
 
 /**
