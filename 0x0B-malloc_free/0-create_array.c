@@ -5,7 +5,7 @@
  * @c: param
  * Return: char*
  */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
 	int i;
 	char *out = malloc(size * sizeof(char));
