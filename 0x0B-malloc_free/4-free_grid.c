@@ -2,7 +2,7 @@
 /**
 * free_grid - func
 * @grid: param
-* @heeight: param
+* @height: param
 */
 void free_grid(int **grid, int height)
 {
