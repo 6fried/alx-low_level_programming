@@ -1,0 +1,25 @@
+#include "main.h"
+/**
+* alloc_grid - func
+* @width: param
+* @height: param
+* Return: char**
+*/
+int **alloc_grid(int width, int height)
+{
+	int i, j;
+	int **out;
+	out = malloc(height * sizeof(int));
+
+	if (out == NULL)
+		return (NULL);
+
+	for (i = 0; i < height; i++)
+		out[i] = malloc(width * sizeof(int));
+
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			out[i][j] = 0;
+
+	return (out);
+}
